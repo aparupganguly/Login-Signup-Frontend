@@ -1,10 +1,5 @@
-import logo from "./logo.svg";
-import "./App.css";
+
 import { Box } from "@chakra-ui/react";
-import Forgotpsd from "./Components/Forgotpsd";
-import Signup from "./Components/Signup";
-import Loginpage from "./Components/Loginpage";
-import Otpauth from "./Components/Otpauth";
 import { Link } from "react-router-dom";
 
 import {FaFacebook,FaGoogle} from 'react-icons/fa';
@@ -18,7 +13,7 @@ import {
   FormHelperText,
 } from "@chakra-ui/react";
 
-function App() {
+function Loginpage() {
   return (
     <>
       <div
@@ -28,7 +23,7 @@ function App() {
         }}
       >
         <div className="App">
-          <p className="sign-text">Sign Up</p>
+          <p className="sign-text">LOGIN</p>
           <FormControl>
             <FormLabel className ="fl" htmlFor="email">Email</FormLabel>
             <Input id="email" type="email" />
@@ -38,18 +33,21 @@ function App() {
             <Input id="psd" type="psd" />
         
           </FormControl>
-            <button className="btn-primary">Sign Up</button>
+            <button className="btn-primary">Login</button>
             <br></br>
+             <Link className="forgot-btn" to ="/forgotpsd" >Forgot Password?</Link >
             <p className="or" align="center">OR</p>
             <IconButton isRound="true" className="glg-btn" size="lg" icon={<FaGoogle />}/>
             <IconButton isRound="true" className="fb-btn" size="lg" icon={<FaFacebook />}/>
             <IconButton isRound="true" className="li-btn" size="lg" icon={<ImLinkedin />}/>
+           
 
-            <Link className="login-link" to ="/login">Already A User? Login!</Link>
+            <Link className="login-link" to ="/">Need An Account? Sign Up!</Link>
+         
         </div>
       </div>
     </>
   );
 }
 
-export default App;
+export default Loginpage;

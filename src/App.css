@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
-}
+.App{
+   
+    height:570px;
+    width:500px;
+    margin:auto;
+    padding: 10px;
+    margin-top:50px;
+    background: rgba(88, 88, 88, 0.8);
+    backdrop-filter: saturate(180%) blur(10px);
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+}@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .App {
+      -webkit-backdrop-filter: blur(9px);
+      backdrop-filter: blur(10px);
+      border-radius:40px;
+    }
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App2{
+  height:370px;
+  border-radius:40px;
+  width:500px;
+  margin:auto;
+  padding: 10px;
+  margin-top:50px;
+  background: rgba(88, 88, 88, 0.8);
+  backdrop-filter: saturate(180%) blur(10px);
+
+}@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .App {
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(10px);
+    border-radius:40px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .bg-img{
+      height:100vh;
+      max-width: 100%;
+      overflow: hidden;
   }
-  to {
-    transform: rotate(360deg);
+  .sign-text{
+      text-align: center;
+      color:#CDFAD7;
+      font-size: 29px;
   }
-}
+  #psd{
+    margin-left: 120px;
+    width:260px;
+    height:30px;
+    border-radius: 11px;
+    background: rgba(0, 0, 0, 0);
+    margin-top:20px;
+    border-color: #A6E8A1;
+
+  }
+  #email{
+    margin-left: 120px;
+    width:260px;
+    height:30px;
+    border-radius: 11px;
+    background: rgba(0, 0, 0, 0);
+    margin-top:20px;
+    border-color: #A6E8A1;
+
+  }
+  .fl{
+    margin-left: 225px;
+    color: #D1FFCC;
+      
+
+  }
+  .fl2{
+    margin-left: 215px;
+    color: #D1FFCC;
+    margin-top:30px;
+
+  }
+  .btn-primary{
+    background-color:#80B58B;
+    margin-left: 160px;
+    margin-top:50px;
+    height:35px;
+    width:190px;
+    border-radius:10px;
+
+  }
+  .glg-btn{
+    border-radius:18px;
+    font-size:30px;
+    margin-left:40px;
+    margin-top:10px;
+    margin-bottom: 50px;
+    
+
+  }
+  .fb-btn{
+    border-radius:28px;
+    font-size:30px;
+    margin-left:157px;
+    margin-top:10px;
+    margin-bottom: 50px;
+
+
+  }
+  .li-btn{
+    border-radius:10px;
+    font-size:30px;
+    margin-left:157px;
+    margin-top:10px;
+    margin-bottom: 50px;
+  }
+  .or{
+    color:#80B58B;
+    margin-top:50px;
+  }
+  .login-link{
+    margin-left: 170px;
+    color: #D1FFCC;
+   
+  }
+  .forgot-btn{
+    color: grey;
+    float: right;
+    margin-right:40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .btn-primary2{
+
+    text-decoration: none;
+    color: black;
+   
+
+  }
+  .btn-primary3{
+    background-color:#80B58B;
+    width:100px;
+    text-align: center;
+    border-radius:7px;
+    height:23px;
+    margin-left: 200px;
+    margin-top:40px;
+
+  }
